@@ -1,4 +1,6 @@
-<img src="./rmt.png" width="450px"></img>
+<img src="./rmt.png" width="800px"></img>
+
+**Figure 2: Comparison of Recurrent Memory Transformer (RMT) and Transformer-XL architectures.** <br> Recurrent Memory Transformer augments Transformer with global memory tokens and passes them to allow a segment-level recurrence. Special read/write memory tokens are added to the input sequence. Multiple memory tokens can be used in each read/write block. Updated representations of write memory are passed to the next segment. During training, RMT uses BPTT to propagate gradient to previous segments through memory tokens representation. Effective context length for recurrence with memory is not limited by the depth of a network which is the case for the cache of Transformer-XL.
 
 ## Recurrent Memory Transformer - Pytorch
 
